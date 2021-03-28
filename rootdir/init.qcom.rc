@@ -493,6 +493,9 @@ on property:bluetooth.hciattach=true
 
 on property:bluetooth.hciattach=false
     setprop bluetooth.status off
+    
+    #enable camera read sensors data
+    setprop persist.vendor.camera.gyro.disable 0
 
 service atfwd /vendor/bin/ATFWD-daemon
     class late_start
