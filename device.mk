@@ -302,7 +302,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Properties
--include device/asus/A001D/prop.mk
+-include $(LOCAL_PATH)/prop.mk
 
 # QMI
 PRODUCT_PACKAGES += \
