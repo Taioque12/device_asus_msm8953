@@ -27,7 +27,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+$(LOCAL_PATH)/overlay \
+$(LOCAL_PATH)/overlay-fluid
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
